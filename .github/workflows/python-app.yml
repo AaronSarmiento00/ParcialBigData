@@ -32,3 +32,5 @@ jobs:
       - name: Test SSH Connection
         run: |
           ssh -v -o StrictHostKeyChecking=no -i ec2_key ${{ secrets.USER_NAME }}@${{ secrets.SSH_HOST }} echo "Conexión SSH exitosa"
+
+ 
